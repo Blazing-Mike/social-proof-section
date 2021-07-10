@@ -1,0 +1,148 @@
+/* use for margin */
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.star {
+  max-width: 1rem;
+}
+
+.profile {
+  max-width: 3rem;
+  border-radius: 50%;
+}
+
+/* typo */
+.name {
+  font-weight: 700;
+  color: white;
+}
+
+.role {
+  color: #ee68a4;
+  font-size: 0.7rem;
+}
+
+.para {
+  color: white;
+  font-weight: 500;
+  margin-top: 5vh;
+}
+
+/* body */
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #502050;
+  margin-bottom: 5vh;
+  font-weight: 800;
+}
+
+header .intro {
+  color: #937b92;
+  font-size: 1rem;
+  margin-bottom: 5vh;
+}
+
+.rating {
+  color: #502050;
+  background-color: #937b92;
+  text-align: center;
+  margin: 5vh 5vh;
+  max-width: 20rem;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.65rem;
+  border-radius: 0.5rem;
+}
+
+.testimony {
+  background-color: #502050;
+  max-width: 20rem;
+  margin: 5vh;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.testimonial {
+  padding-top: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.head-flex {
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.head-flex .items {
+  width: 30rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .rating {
+    width: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8px;
+    padding: 0.7rem;
+  }
+  header {
+    text-align: left;
+  }
+  .rate-2 {
+    margin-left: 5rem;
+  }
+  .rate-3 {
+    margin-left: 8rem;
+  }
+}
+
+.attribution {
+  text-align: center;
+  color: #502050;
+  font-weight: 500;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #502050;
+}

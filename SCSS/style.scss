@@ -1,0 +1,140 @@
+//colors
+
+$primary-color: hsl(300, 43%, 22%);
+$Secondary-color: hsl(333, 80%, 67%);
+$accent-color: hsl(303, 10%, 53%);
+$text-color: hsl(0, 0%, 100%);
+$para-color: hsl(300, 24%, 96%);
+$space: 5vh; /* use for margin */
+
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+
+// reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+img {
+  width: 100%;
+}
+
+.star {
+  max-width: 1rem;
+}
+
+.profile {
+  max-width: 3rem;
+  border-radius: 50%;
+}
+/* typo */
+
+.name {
+  font-weight: 700;
+  color: $text-color;
+}
+
+.role {
+  color: $Secondary-color;
+  font-size: 0.7rem;
+}
+.para {
+  color: $text-color;
+  font-weight: 500;
+  margin-top: $space;
+}
+
+/* body */
+
+header {
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    color: $primary-color;
+    margin-bottom: $space;
+    font-weight: 800;
+  }
+
+  .intro {
+    color: $accent-color;
+    font-size: 1rem;
+    margin-bottom: $space;
+  }
+}
+
+.rating {
+  color: $primary-color;
+  background-color: $accent-color;
+  text-align: center;
+  margin: $space $space;
+  max-width: 20rem;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.65rem;
+  border-radius: 0.5rem;
+}
+
+.testimony {
+  background-color: $primary-color;
+  max-width: 20rem;
+  margin: $space;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.testimonial {
+  padding-top: 5rem;
+  justify-content: center;
+}
+
+.head-flex {
+  padding-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  .items {
+    width: 30rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .rating {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 0.7rem;
+  }
+
+  header {
+    text-align: left;
+  }
+
+  .rate-2 {
+    margin-left: 5rem;
+  }
+  .rate-3 {
+    margin-left: 8rem;
+  }
+}
+
+.attribution {
+  text-align: center;
+  color: $primary-color;
+  font-weight: 500;
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
